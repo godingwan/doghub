@@ -1,8 +1,10 @@
 Doghub::Application.routes.draw do
 
   resource :home
+  get "/login" => "homes#login"
+  root :to => 'homes#show'
 
-  root :to => 'welcome#index'
+
 
 
   # The priority is based upon order of creation:
