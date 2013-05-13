@@ -1,0 +1,104 @@
+@import compass/css3
+
+$blue: #4183c4
+$green: #569e3d
+$grey: #fafafa
+$darkgrey: darken($grey, 10%)
+
+.topbar
+  border: 1px solid darken($grey, 10%)
+  background-color: darken($grey, 5%)
+  +box-sizing(border-box)
+  overflow: auto
+  +border-radius(5px)
+  margin: 20px 0px
+  font-weight: bold
+
+.topbarlink
+  +box-sizing(border-box)
+  float: left
+  text-align: center
+  width: 25%
+  font-size: 80%
+  padding: 8px
+  &:first-child
+    border-bottom: 3px solid orange
+  &:not(:first-child)
+    border:
+      left: 1px solid grey
+      bottom: 3px solid grey
+
+.daysago
+  color: darken($darkgrey, 10%)
+
+.updates li
+  font-size: 80%
+  width: 500px
+  border-top: 1px solid $darkgrey
+  border-bottom: 1px solid $darkgrey
+  padding: 10px
+
+.repositories
+  float: right
+  border: 1px solid $darkgrey
+  width: 300px
+
+.your_repositories
+  margin: 5px
+  font-weight: bold
+  float: left
+
+.new_repository
+  margin: 5px
+  float: right
+  text-align: center
+  font-size: 80%
+  width: 100px
+  color: white
+  border: 1px solid green
+  +background-image(linear-gradient(lighten($green, 20%), $green))
+  +border-radius(5px)
+
+.find_a_repository
+  font-size: 75%
+  width: 85%
+  padding: 5px 10px
+  +border-radius(100px)
+
+
+
+.all_repositories
+  font-weight: bold
+  font-size: 75%
+  float: left
+  padding: 5px 10px
+
+.nav_git
+  font-size: 75%
+  padding: 5px 10px
+  float: right
+
+.nav_git_link
+  float: left
+  color: darken($darkgrey, 50%)
+  &:hover
+    color: darken($darkgrey, 50%)
+    text-decoration: underline
+
+.user_repositories
+  font-size: 75%
+  display: block
+  clear: both
+
+.account_link
+  color: $blue
+
+.user_repositories_link
+  display: block
+  border-top: 1px solid $darkgrey
+  padding: 5px
+  color: #4183c4
+  text-decoration: underline
+
+.updates
+  margin-bottom: 50px

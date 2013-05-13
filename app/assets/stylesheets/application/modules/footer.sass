@@ -1,24 +1,29 @@
+@import compass/css3
+
+$grey: #fafafa
+
+footer
+  clear: both
+  p
+    float: right
+
 ul
   display: inline-block
-  font-size: .5em
   float: left
+  a
+    color: #4183c4
+    text-decoration: none
+    &:hover
+      text-decoration: underline
 
 .bottom_links
   display: block
   overflow: auto
-  border-top: 1px solid grey
+  border-top: 1px solid darken($grey, 10%)
   padding: 1em 0em
-
-ul a
-  text-decoration: none
-
-li
-  padding: 0em 1em
 
 .tos
   display: inline
 
-
-footer p
-  font-size: 0.5em
-  float: right
+.footer-link-columns
+  width: 20%

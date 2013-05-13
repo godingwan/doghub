@@ -1,32 +1,41 @@
+@import compass/css3
+
+$grey: #fafafa
+
 .top_tag
   padding-bottom: 2px
-  border-bottom: 2px solid grey
+  border-bottom: 1px solid darken($grey, 10%)
   width: 100%
 
 .logo
-  padding: 0.5em 2em
+  padding-top: 15px
+  font:
+    weight: bold
+    size: 2.5em
   display: inline-block
+  &:hover
+    color: #4183c4
 
-nav
-  display: inline-block
-  position: absolute
-  right: 0px
-  padding: 0.5em 2em
+.top_nav
+  text-align: right
+  margin-top: -35px
+  margin-bottom: 15px
 
 nav a
   text-decoration: none
   color: black
+  &:hover
+    color: #4183c4
 
-nav a:hover
-  color: blue
-
-.nav_item
+.top_nav_item
   padding: 0em .5em
-  font-size: .6em
 
 .nav_item_button
   padding: 0.5em
-  border: 0.1em solid grey
-  background-color: lightgrey
-  color: black
+  border: 1px solid darken($grey, 10%)
+  +background-image(linear-gradient($grey, darken($grey, 10%)))
+  +border-radius(5px)
+  &:hover
+    color: black
+    +background-image(linear-gradient(darken($grey, 15%), darken($grey, 20%)))
 

@@ -1,7 +1,7 @@
 Doghub::Application.routes.draw do
 
   resource :home
-  get "/login" => "homes#login"
+  get "/dashboard" => "homes#dashboard"
   root :to => 'homes#show'
 
 
